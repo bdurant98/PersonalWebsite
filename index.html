@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Durant's Personal Portfolio</title>
+    <link rel="stylesheet" href="/dist/styles.css">
+</head>
+<body>
+    <!-- The header of the page to have a split layout -->
+    <div class="headingContainer">
+        <div>
+        <div class="headingText">
+            Benjamin Durant
+        </div>
+        <div class="subheadingText">
+            Junior Front End Developer
+        </div>
+        </div>
+        <div class="personalImage">
+            <img src="./assets/picOfMe.jpg" alt="A picture of me at a museum exhibit.">
+        </div>
+    </div>
+    <div class="mainGridContainer">
+        <div class="bodyContentGrid">
+            <div class="navAside">
+                <div class="navElement"><a href="#aboutMe">About Me</a></div><br>
+                <div class="navElement"><a href="#skills">Skills</a></div><br>
+                <div class="navElement"><a href="#education">Education</a></div><br>
+                <div class="navElement"><a href="#contact">Contact Me</a></div><br>
+                <div class="navElement"><a href="https://www.linkedin.com/in/ben-durant-2ab571277/" target="_blank">My LinkedIn Page</a></div>
+            </div>
+            <div class="mainContent" id="aboutMe">
+                <h3>About Me</h3>
+                <p class="indentText">I'm a new front end developer living out in Tracy, California. I've lived in the area my entire life. I'm learning front end developing as a means to get into a field that I've been dreaming of getting into for a long time. My school, Correlation One, has been doing great in preparing me and supporting me through the learning process of this profession.</p>
+                <p class="indentText">I'm currently an Amazon Associate at Amazon's SMF3 location in their sort department. I work as a process guide that runs the pre-sort process of breaking down pallets. Other functions of my job include managing inventory levels in the warehouse. I have been in a consisent place of the leadership team for almost a year now.
+                </p>
+                <p class="indentText">With the material that I am learning, I am confident that I will be a great asset to any front end developing team that I am brought into. If you would like to contact me. there is a form to do so down at the bottom of the page under the Contact Me section. 
+                </p>
+            </div>
+            <div class="mainContent" id="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS/SCSS</li>
+                    <li>Java</li>
+                    <li>Slack</li>
+                    <li>Inter-department Communication</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </div>
+            <div class="mainContent" id="education">
+                <h3>Education</h3>
+                <p class="indentText">San Joaquin Delta College</p>
+                <p class="indentText">Associates Degree in History</p>
+            </div>
+            <div class="mainContent" id="contact">
+                <h3>Get in Touch with me!</h3>
+                <form action="./contact.php" method="post" name="contact">
+                    <label for="fName">First Name: </label> <br>
+                    <input type="text" id="fName" name="contact"><br><br>
+                    <label for="lName">Last Name: </label><br>
+                    <input type="text" name="contact" id="lName"><br><br>
+                    <label for="pNumber">Phone Number</label><br>
+                    <input type="text" name="contact" id="pNumber"><br><br>
+                    <label for="email">Email Address</label><br>
+                    <input type="text" name="contact" id="email"><br><br>
+                    <input type="submit" value="Submit"><br>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

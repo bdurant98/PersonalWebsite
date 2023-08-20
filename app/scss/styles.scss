@@ -1,0 +1,83 @@
+@import "globals";
+
+// Color variables:
+$DarkBackground: #124559;
+$lightBackground: #55917F;
+$HeaderFont: #F4E8C1;
+$navAside: #6BAB90;
+
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: $DarkBackground;
+    color: $HeaderFont;
+}
+
+.headingContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: min(100% - 2rem, 1300px );
+    min-height: 80vh;
+    margin-inline: auto;
+    padding: 2rem;
+}
+
+.headingText {
+    font-size: 4rem;
+    max-width: 25ch;
+    margin-bottom: 2rem;
+}
+
+.subheadingText {
+    font-size: 2rem;
+    max-width: 50ch;
+}
+
+.personalImage > img {
+    width: 350px;
+    border: hidden round;
+    border-radius: 20px;
+}
+
+//Display the main content in a 15% 75% grid to leave 10% on the right as empty space
+.bodyContentGrid {
+    display: grid;
+    grid-template-columns: 15% 75%;
+    .navElement {
+        a:link {
+            color: $HeaderFont;
+        }
+        a:visited {
+            color: $HeaderFont;
+        }
+        a:hover {
+            cursor: pointer;
+        }
+    }
+}
+.mainContent{
+    padding-left: 3rem;
+}
+
+.navElement:hover{
+    scale: 1.05;
+    transition: ease-in-out 0.5s;
+
+}
+
+
+//Define the navAside to make sure that it will take up the side bar to allow users to quickly access the section of the website they want. 
+.navAside{
+    padding-top: 3rem;
+    text-align: center;
+    grid-row: 1 / 5;
+    background-color: $lightBackground;
+    border: hidden round;
+    border-radius: 5px;
+}
+
+#contact{
+    padding-bottom: 4rem;
+}
