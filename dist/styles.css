@@ -62,6 +62,8 @@ body {
 
 .mainContent {
   padding-left: 3rem;
+  border: solid round 2px;
+  border-color: #F4E8C1;
 }
 
 .navElement:hover {
@@ -78,9 +80,9 @@ body {
   border-radius: 5px;
 }
 
-.contact-card {
-  border: solid round 2px;
+.contactCard {
+  border: solid round;
   border-radius: 7px;
-  border-color: #6BAB90;
+  border-color: white;
   padding-bottom: 4rem;
 }/*# sourceMappingURL=styles.css.map */

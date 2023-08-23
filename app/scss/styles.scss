@@ -59,6 +59,8 @@ body{
 }
 .mainContent{
     padding-left: 3rem;
+    border: solid round 2px;
+    border-color: $HeaderFont;
 }
 
 .navElement:hover{
@@ -79,9 +81,10 @@ body{
 }
 
 
-.contact-card {
-    border: solid round 2px;
+.contactCard {
+    border: solid round;
     border-radius: 7px;
-    border-color: $navAside;
+    border-color: white;
     padding-bottom: 4rem;
+
 }
