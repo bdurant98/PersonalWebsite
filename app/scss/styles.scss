@@ -12,6 +12,21 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: $DarkBackground;
     color: $HeaderFont;
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(3px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .headingContainer {
@@ -59,9 +74,9 @@ body{
 }
 .mainContent{
     padding-left: 3rem;
-    border: solid round 2px;
-    border-color: $HeaderFont;
+
 }
+
 
 .navElement:hover{
     scale: 1.05;
@@ -76,13 +91,13 @@ body{
     text-align: center;
     grid-row: 1 / 5;
     background-color: $lightBackground;
-    border: hidden round;
+    border: hidden;
     border-radius: 5px;
 }
 
 
 .contactCard {
-    border: solid round;
+    border: solid;
     border-radius: 7px;
     border-color: white;
     padding-bottom: 4rem;
