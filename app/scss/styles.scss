@@ -81,3 +81,9 @@ body{
 #contact{
     padding-bottom: 4rem;
 }
+
+.contact-card {
+    border: solid round 2px;
+    border-radius: 7px;
+    border-color: $navAside;
+}
