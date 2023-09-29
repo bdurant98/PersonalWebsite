@@ -15,8 +15,8 @@ body {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #124559;
-  color: #F4E8C1;
+  background-color: #DFDFDF;
+  color: black;
   animation-name: fade-in;
   animation-duration: 0.5s;
   animation-direction: normal;
@@ -33,12 +33,30 @@ body {
     transform: translateY(0);
   }
 }
+.main-nav {
+  display: flex;
+  list-style: none;
+  background-color: #124559;
+  margin: 0;
+  color: #DFDFDF;
+}
+
+.nav-element {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.push {
+  margin-left: auto;
+}
+
 .headingContainer {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: min(100% - 2rem, 1300px);
-  min-height: 80vh;
+  min-height: 50vh;
   margin-inline: auto;
   padding: 2rem;
 }
@@ -60,20 +78,6 @@ body {
   border-radius: 20px;
 }
 
-.bodyContentGrid {
-  display: grid;
-  grid-template-columns: 15% 75%;
-}
-.bodyContentGrid .navElement a:link {
-  color: #F4E8C1;
-}
-.bodyContentGrid .navElement a:visited {
-  color: #F4E8C1;
-}
-.bodyContentGrid .navElement a:hover {
-  cursor: pointer;
-}
-
 .mainContent {
   padding-left: 3rem;
 }
@@ -83,18 +87,13 @@ body {
   transition: ease-in-out 0.5s;
 }
 
-.navAside {
-  padding-top: 3rem;
-  text-align: center;
-  grid-row: 1/5;
-  background-color: #55917F;
-  border: hidden;
-  border-radius: 5px;
-}
-
 .contactCard {
   border: solid;
   border-radius: 7px;
   border-color: white;
   padding-bottom: 4rem;
+}
+
+header {
+  display: inline;
 }/*# sourceMappingURL=styles.css.map */

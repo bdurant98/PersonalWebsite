@@ -1,8 +1,9 @@
 @import "globals";
+// scss file for project 4.
 
 // Color variables:
 $DarkBackground: #124559;
-$lightBackground: #55917F;
+$lightBackground: #DFDFDF;
 $HeaderFont: #F4E8C1;
 $navAside: #6BAB90;
 
@@ -10,8 +11,11 @@ $navAside: #6BAB90;
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: $DarkBackground;
-    color: $HeaderFont;
+    background-color: $lightBackground;
+    color: black;
+    //width: min(100% - 2rem, 1300px );
+    //align-items: center;
+    //justify-content: center;
     animation-name: fade-in;
     animation-duration: 0.5s;
     animation-direction: normal;
@@ -29,12 +33,30 @@ body{
     }
 }
 
+.main-nav {
+    display: flex;
+    list-style: none;
+    background-color: $DarkBackground;
+    margin: 0;
+    color: #DFDFDF;
+}
+
+.nav-element {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.push {
+    margin-left: auto;
+}
+
 .headingContainer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: min(100% - 2rem, 1300px );
-    min-height: 80vh;
+    min-height: 50vh;
     margin-inline: auto;
     padding: 2rem;
 }
@@ -56,22 +78,7 @@ body{
     border-radius: 20px;
 }
 
-//Display the main content in a 15% 75% grid to leave 10% on the right as empty space
-.bodyContentGrid {
-    display: grid;
-    grid-template-columns: 15% 75%;
-    .navElement {
-        a:link {
-            color: $HeaderFont;
-        }
-        a:visited {
-            color: $HeaderFont;
-        }
-        a:hover {
-            cursor: pointer;
-        }
-    }
-}
+
 .mainContent{
     padding-left: 3rem;
 
@@ -86,14 +93,14 @@ body{
 
 
 //Define the navAside to make sure that it will take up the side bar to allow users to quickly access the section of the website they want. 
-.navAside{
-    padding-top: 3rem;
-    text-align: center;
-    grid-row: 1 / 5;
-    background-color: $lightBackground;
-    border: hidden;
-    border-radius: 5px;
-}
+// .navAside{
+//     padding-top: 3rem;
+//     text-align: center;
+//     grid-row: 1 / 5;
+//     background-color: $DarkBackground;
+//     border: hidden;
+//     border-radius: 5px;
+// }
 
 
 .contactCard {
@@ -103,3 +110,40 @@ body{
     padding-bottom: 4rem;
 
 }
+
+ header {
+     display: inline;
+ }
+// .nightmode-container{
+//     display: inline;
+//     width: 100%;
+//     background-color: $DarkBackground;
+// }
+
+// .toggle-switch input{
+//     opacity: 0;
+//     width: 0;
+//     height: 0;
+// }
+
+// .toggle-switch {
+//     position: relative;
+//     display: inline-block;
+//     width: 2%;
+//     height: 1.5%;
+//     margin-bottom: 0.5rem;
+//     margin-inline: auto;
+// }
+
+// .slider {
+//     position: absolute;
+//     cursor: pointer;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     background-color: lightgray;
+//     transition: all 0.4s ease-in;
+//     border-radius: 2.0rem;
+// }
+
