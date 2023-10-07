@@ -16,13 +16,11 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: $lightBackground;
     color: $darkText;
-    //width: min(100% - 2rem, 1300px );
-    //align-items: center;
-    //justify-content: center;
     animation-name: fade-in;
     animation-duration: 0.5s;
     animation-direction: normal;
     animation-timing-function: ease-in;
+    transition: all 0.25s ease-in;
 }
 
 @keyframes fade-in {
@@ -49,6 +47,8 @@ body{
     padding-bottom: 1.25rem;
     padding-left: 3rem;
     padding-right: 3rem;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 a:link, a:visited {
@@ -167,7 +167,9 @@ a:hover {
     padding-right: 1rem;
  }
 
-//  .dark-mode{
-    
-//  }
+.night-mode{
+    background-color: $DarkBackground;
+    color: $lightBackground;
+    transition: all 0.25s ease-in;
+}
 

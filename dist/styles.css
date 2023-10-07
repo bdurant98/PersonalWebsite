@@ -21,6 +21,7 @@ body {
   animation-duration: 0.5s;
   animation-direction: normal;
   animation-timing-function: ease-in;
+  transition: all 0.25s ease-in;
 }
 
 @keyframes fade-in {
@@ -46,6 +47,8 @@ body {
   padding-bottom: 1.25rem;
   padding-left: 3rem;
   padding-right: 3rem;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 a:link, a:visited {
@@ -159,4 +162,10 @@ input:checked + .slider:before {
   display: grid;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.night-mode {
+  background-color: #1C2541;
+  color: #fbfaf8;
+  transition: all 0.25s ease-in;
 }/*# sourceMappingURL=styles.css.map */
