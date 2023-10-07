@@ -2,17 +2,20 @@
 // scss file for project 4.
 
 // Color variables:
-$DarkBackground: #124559;
-$lightBackground: #DFDFDF;
+$DarkBackground: #1C2541;
+$lightBackground: #fbfaf8;
 $HeaderFont: #F4E8C1;
 $navAside: #6BAB90;
+$anotherNav: #508991;
+$nightMode: #172A3A;
+$darkText: black;
 
 
 
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: $lightBackground;
-    color: black;
+    color: $darkText;
     //width: min(100% - 2rem, 1300px );
     //align-items: center;
     //justify-content: center;
@@ -42,15 +45,24 @@ body{
 }
 
 .nav-element {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
     padding-left: 3rem;
     padding-right: 3rem;
 }
 
-.push {
-    margin-left: auto;
+a:link, a:visited {
+    background-color: $DarkBackground;
+    color: #dfdfdf;
+    text-decoration: none;
 }
+
+a:hover {
+    background-color: $anotherNav;
+    color: $lightBackground;
+}
+
+
 
 .headingContainer {
     display: flex;
@@ -58,7 +70,7 @@ body{
     justify-content: space-evenly;
     min-height: 50vh;
     margin-inline: auto;
-    padding: 2rem;
+    padding: 2.5rem;
 }
 
 .headingText {
@@ -73,7 +85,7 @@ body{
 }
 
 .personalImage > img {
-    width: 350px;
+    width: 20rem;
     border: hidden round;
     border-radius: 20px;
 }
@@ -81,69 +93,81 @@ body{
 
 .mainContent{
     padding-left: 3rem;
-
-}
-
-
-.navElement:hover{
-    scale: 1.05;
-    transition: ease-in-out 0.5s;
-
-}
-
-
-//Define the navAside to make sure that it will take up the side bar to allow users to quickly access the section of the website they want. 
-// .navAside{
-//     padding-top: 3rem;
-//     text-align: center;
-//     grid-row: 1 / 5;
-//     background-color: $DarkBackground;
-//     border: hidden;
-//     border-radius: 5px;
-// }
-
-
-.contactCard {
-    border: solid;
-    border-radius: 7px;
-    border-color: white;
-    padding-bottom: 4rem;
-
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.05rem;
 }
 
  header {
      display: inline;
  }
-// .nightmode-container{
-//     display: inline;
-//     width: 100%;
-//     background-color: $DarkBackground;
-// }
 
-// .toggle-switch input{
-//     opacity: 0;
-//     width: 0;
-//     height: 0;
-// }
+ .nightmode-container {
+    display: grid;
+    width: 100%;
+    place-content: center;
+    text-align: center;
+ }
 
-// .toggle-switch {
-//     position: relative;
-//     display: inline-block;
-//     width: 2%;
-//     height: 1.5%;
-//     margin-bottom: 0.5rem;
-//     margin-inline: auto;
-// }
+ .toggle-switch {
+    position: relative;
+    display: inline;
+    width: 3.75em;
+    height: 2.13em;
+    margin-inline: auto;
+    margin-bottom: 0.63rem;
+ }
 
-// .slider {
-//     position: absolute;
-//     cursor: pointer;
-//     top: 0;
-//     right: 0;
-//     bottom: 0;
-//     left: 0;
-//     background-color: lightgray;
-//     transition: all 0.4s ease-in;
-//     border-radius: 2.0rem;
-// }
+ .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+ }
+
+ .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: all ease-in 0.5s;
+    border-radius: 2.13rem;
+ }
+
+ .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.63rem;
+    width: 1.63rem;
+    left: 0.25rem;
+    bottom: 0.25rem;
+    background-color: white;
+    transition: 0.5s;
+    border-radius: 50%;
+ }
+
+ input:checked + .slider{
+    background-color: #2196f3;
+ }
+
+ input:focus {
+    box-shadow: 0 0 2px #2196f3;
+ }
+
+ input:checked + .slider:before {
+    transform: translateX(1.63rem);
+ }
+
+ .mode-status {
+    display: grid;
+    padding-left: 1rem;
+    padding-right: 1rem;
+ }
+
+//  .dark-mode{
+    
+//  }
 

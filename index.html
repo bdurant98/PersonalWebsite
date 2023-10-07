@@ -11,19 +11,22 @@
     <nav class="nav-header">
         <ul class="main-nav">
             <li class="name-logo nav-element">Ben Durant</li>
-            <li class="nav-element" id="push">About Me</li>
-            <li class="nav-element">Projects</li>
-            <li class="nav-element">Contact Me</li>
-            <li class="nav-element" id="nightmode"></li>
+            <a href=""><li class="nav-element">About Me</li></a>
+            <a href=""><li class="nav-element">Projects</li></a>
+            <a href=""><li class="nav-element">Contact Me</li></a>
+            <li>
+                <ul class="main-nav">
+                    <li class="nightmode-container"><label class="toggle-switch">
+                        <input type="checkbox" id="mode-toggle">
+                        <span class="slider"></span>
+                    </label>
+                    </li>
+                    <li>
+                        <p class="mode-status">Day Mode</p>
+                    </li>
+            </li>
         </ul>
         
-        <!-- <div class="nightmode-container">
-                    <label id="toggle-switch">
-                    <input type="checkbox" id="mode-toggle">
-                    <span class="slider"></span>
-                    <p class="mode-status">Day Mode</p>
-                    </label>
-        </div> -->
     </nav>
     <div class="headingContainer">
         <div>
@@ -38,15 +41,6 @@
             <img src="./assets/picOfMe.jpg" alt="A picture of me at a museum exhibit.">
         </div>
     </div>
-    <div class="mainGridContainer">
-        <div class="bodyContentGrid">
-            <!-- <div class="navAside">
-                <div class="navElement"><a href="#aboutMe">About Me</a></div><br>
-                <div class="navElement"><a href="#skills">Skills</a></div><br>
-                <div class="navElement"><a href="#education">Education</a></div><br>
-                <div class="navElement"><a href="#contact">Contact Me</a></div><br>
-                <div class="navElement"><a href="https://www.linkedin.com/in/benjaminsdurant/" target="_blank">My LinkedIn Page</a></div>
-            </div> -->
             <div class="mainContent" id="aboutMe">
                 <h3>About Me</h3>
                 <p class="indentText">I'm a new front end developer living out in Tracy, California. I've lived in the area my entire life. I'm learning front end developing as a means to get into a field that I've been dreaming of getting into for a long time. My school, Correlation One, has been doing great in preparing me and supporting me through the learning process of this profession.</p>
@@ -73,9 +67,11 @@
                 <h4 class="indentText"><b>Tracy High School</b></h4>
                 <p class="indentText">High school diploma</p>
             </div>
-        </div>
-
-    </div>
+            <div class="nightmode-container">
+                
+                
+            </div>
+            
     <script src="script.js"></script>
 </body>
 </html>
