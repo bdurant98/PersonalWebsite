@@ -1,3 +1,7 @@
+/*
+* This code sets up the night mode slider on the website and allows the toggle between the settings
+*/
+
 const body = document.querySelector('body');
 const mainContent = document.querySelector('.mainContent');
 const modeStatus = document.querySelector('.mode-status');
@@ -15,3 +19,25 @@ function toggleMode() {
 
 modeToggle.addEventListener('click', toggleMode);
 
+
+/*
+* This code is for the fade in effect to be added on the projects cards on the projects page.
+*/
+ const projectCards = document.querySelectorAll(".project-card");
+ const options = {
+    threshold: 0.5
+ }
+
+ function addFadeIn (entries) {
+    entries.forEach(element => {
+        if(element.isIntersecting){
+            element.target.classList.add("fade-in");
+        }
+    });
+ }
+
+ const observer = new IntersectionObserver(addFadeIn, options);
+
+ projectCards.forEach(item => {
+    observer.observe(item);
+ });
