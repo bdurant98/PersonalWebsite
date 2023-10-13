@@ -171,22 +171,55 @@ input:checked + .slider:before {
 }
 
 .main-body {
-  width: 80%;
+  width: 75%;
   align-content: center;
   margin-left: auto;
   margin-right: auto;
 }
 
 .project-card {
-  width: 30rem;
-  height: 30rem;
+  width: 100%;
+  min-height: 20rem;
   border: solid 1px grey;
-  border-radius: 5%;
+  border-radius: 2rem;
   padding: 0.5rem;
   margin: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.25s ease-in;
 }
 
 .project-grid {
+  display: block;
+  align-items: center;
+}
+
+.project-card-content {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
+  margin-inline: auto;
+}
+
+.fade-in {
+  opacity: 1 !important;
+}
+
+#to-do-list-img {
+  width: 70%;
+}
+
+button {
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: #1C2541;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fbfaf8;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #508991;
 }/*# sourceMappingURL=styles.css.map */
