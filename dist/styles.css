@@ -195,9 +195,31 @@ input:checked + .slider:before {
 
 .project-card-content {
   display: flex;
-  justify-content: left;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-inline: auto;
 }
 
 .fade-in {
   opacity: 1 !important;
+}
+
+#to-do-list-img {
+  width: 70%;
+}
+
+button {
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: #1C2541;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fbfaf8;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #508991;
 }/*# sourceMappingURL=styles.css.map */
