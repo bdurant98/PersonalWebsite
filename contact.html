@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Me</title>
+</head>
+<body>
+    <nav class="nav-header">
+        <ul class="main-nav">
+            <li class="name-logo nav-element">Ben Durant</li>
+            <a href="index.html"><li class="nav-element">About Me</li></a>
+            <a href="projects.html"><li class="nav-element">Projects</li></a>
+            <a href="contact.html"><li class="nav-element">Contact Me</li></a>
+            <li>
+                <ul class="main-nav">
+                    <li class="nightmode-container"><label class="toggle-switch">
+                        <input type="checkbox" id="mode-toggle">
+                        <span class="slider"></span>
+                    </label>
+                    </li>
+                    <li>
+                        <p class="mode-status">Day Mode</p>
+                    </li>
+            </li>
+        </ul>
+    </nav>
+    <h1>Contact Me</h1>
+    <form action="#" method="post" class="contact-form">
+        <label for="fname">First name:</label><br>
+        <input type="text" name="fname" id="fname-input"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" name="lname" id="lname-input"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email-input"><br>
+        <label for="subject">Subject:</label><br>
+        <input type="text" name="subject" id="subject-input"><br>
+        <label for="message">Message:</label><br>
+        <textarea name="message" id="message-input" cols="30" rows="10"></textarea><br>
+        <button class="form-btn" id="submit-btn">Submit</button>
+        <button class="form-btn" id="reset-btn">Reset</button>
+    </form>
+    <script src="contact-form.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
