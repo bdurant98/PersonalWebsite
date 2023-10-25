@@ -20,6 +20,9 @@ const emailId = email.id;
 const subjectId = subject.id;
 const formMsgId = formMsg.id;
 
+/**
+ * Object to contain the data values from the input and to make sure that all values are filled
+ */
 const formInputs = {
     [fnameInputId]: {
         notEmpty: false,
@@ -33,5 +36,13 @@ const formInputs = {
         notEmpty: false,
         sanitizedValue: ''
     },
-    
+    [subjectId]: {
+        notEmpty: false,
+        sanitizedValue: ''
+    },
+    [formMsgId]: {
+        notEmpty: false,
+        sanitizedValue: ''
+    }
 }
+
