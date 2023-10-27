@@ -88,7 +88,7 @@ a:hover {
   border-radius: 20px;
 }
 
-.mainContent {
+.main-content {
   padding-left: 3rem;
   width: 80%;
   margin-left: auto;
@@ -222,4 +222,28 @@ button {
 button:hover {
   cursor: pointer;
   background-color: #508991;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+.form-input {
+  border-color: #172A3A;
+}
+
+.form-input:focus {
+  border-color: #172A3A;
+  box-shadow: 2px;
+}
+
+.form-input:invalid {
+  border-color: red;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#form-confirm-msg {
+  display: none;
+  color: green;
+}
