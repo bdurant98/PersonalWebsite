@@ -9,10 +9,10 @@ $navAside: #6BAB90;
 $anotherNav: #508991;
 $nightMode: #172A3A;
 $darkText: black;
+$invalidInput: red;
 
 
-
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: $lightBackground;
     color: $darkText;
@@ -91,7 +91,7 @@ a:hover {
 }
 
 
-.mainContent{
+.main-content{
     padding-left: 3rem;
     width: 80%;
     margin-left: auto;
@@ -225,4 +225,28 @@ button {
 button:hover{
     cursor: pointer;
     background-color: $anotherNav;
+}
+
+.form-input {
+    border-color: $nightMode;
+}
+
+.form-input:focus {
+    border-color: $nightMode;
+    box-shadow: 2px;
+}
+
+.form-input:invalid {
+    border-color: $invalidInput;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#form-confirm-msg {
+    display: none;
+    color: green;
 }
